@@ -15,7 +15,7 @@ body{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url(./media/earth.jpeg);*/
+    ,url(./media/earth.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family:'Roboto' ;
@@ -106,9 +106,6 @@ text-align: center;
 
 #nuestros-servicios{
     text-align: center;
-}
-#nuestros-servicios .container{
-    
 }
 
 #nuestros-servicios h2{
@@ -211,6 +208,9 @@ linear-gradient(
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
+    }
+    #slogan h1 {
+        padding-top: 300px;
     }
     #somos-teloenvio .container{
         display: flex;
