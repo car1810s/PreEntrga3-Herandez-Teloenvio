@@ -1,0 +1,328 @@
+
+/*====Estilos de la Version Mobile====*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family:'Roboto';
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+body{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../media/earth.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Roboto' ;
+    
+}
+h1{font-size: 3.5em;
+    color: white ;
+}
+h2{font-size:2.7em;
+    color:white
+}
+h3{font-size: 2em;
+    color:white 
+}
+ p{font-size: 1.25em;
+    color:white
+}
+
+/*====Boton de ingreso Index====*/
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0,0,0.5);
+    box-shadow: 2px 2px rgba(0, 0,0,0.5);
+    background-color: #f4e409;
+    color: black;
+
+    &:hover{
+        background-color: aliceblue;
+        margin: 0;
+    }
+}
+
+/*====Estilos del Header====*/
+
+header{
+    .container{
+        max-width: 1400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        padding: 25px 30px;
+        font-weight: bold;
+        color: #f4e409;
+        font-size: 1.6em;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+/*====Estilos de Body-Index====*/
+
+.slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;flex-direction: column;
+    height: 60vh;
+}
+
+/*=====Estilos de About-Us=====*/
+#somos-teloenvio{
+    text-align: center;
+
+    h2{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-top: 0;
+        text-align: justify ;
+    }
+    .container{
+        text-align: center;
+        padding: 200px 12px;
+    }
+}
+
+#empleados{
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 60px;
+      }
+      .empleado {
+        width: 200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        background-color: #f1f1f1;
+        text-align: center;
+        flex-direction: row;
+        border-radius: 15px; 
+      }
+      h2{
+        margin-bottom: 30px;
+        margin-left: 50px;
+      }
+      p {
+        margin-bottom: 0;
+        color: black;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+}
+
+#nuestros-servicios{
+    text-align: center;
+
+    h2{
+        margin-top: 0;
+    }
+    p{
+        display: none;
+    }
+    .servicios{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 30px;
+        border-radius: 15px;
+      }
+      .servicios:first-child{
+        background-image: linear-gradient(
+            0deg, 
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(../media/remesas.jpeg);
+    }
+    .servicios:nth-child(2){
+        background-image: 
+        linear-gradient(
+                0deg, 
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ) 
+            ,url(../media/divisas.jpeg);
+        }
+    .servicios:nth-child(3){
+            background-image: 
+            linear-gradient(
+                0deg, 
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ) 
+            ,url(../media/paquetes.jpeg);
+        }   
+}
+
+/*====Desktop version====*/
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+
+        .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    }
+    .slogan{
+        h1 {
+            padding-top: 300px;
+        }
+    }
+    #somos-teloenvio{
+        .container{
+            display: flex;
+            padding-left: 200px;
+            padding-top: 30px;
+            justify-content: space-evenly;
+        }  
+        h2{
+            padding-top: 100px;
+        }
+        .img-container {
+            background-image:
+            url(../media/teloenvio1.jpg);
+            background-size: cover ;
+            background-position: center center;
+            width: 500px;
+            height: 500px;  
+        }
+        span{
+            color: #f4e409;
+        }
+        .texto{
+            width: 50%;
+            max-width: 600px;
+            text-align: initial;
+            padding: 0px 30px;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    #empleados{
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-left: 190px;
+            
+          }
+          .empleado {
+            width: 200px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+            flex-direction: row;
+            border-radius: 15px;
+          }
+          h2{
+            margin-bottom: 30px;
+            margin-left: 650px;
+          } 
+          p {
+            margin-bottom: 0;
+            color: black;
+          }
+          img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+          }    
+    }
+    #nuestros-servicios{
+        .servicio{
+            display: flex;
+            justify-content: center;
+          }
+          p{
+            display: block;
+            margin-bottom: 30px;
+          }
+          s  h2{
+            margin-top: 0;
+            padding-top: 100px;
+          }
+          .servicios{
+            padding: 50px;
+            background-size: 100% 150px;
+            background-repeat: no-repeat;
+            background-position-y:0 ;
+            background-color: black;
+            margin-top: 50px;
+          }
+          .servicios:first-child{
+            background-image: linear-gradient(
+                0deg, 
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ) 
+            ,url(../media/remesas.jpeg);
+        }
+        .servicios:nth-child(2){
+            background-image: 
+            linear-gradient(
+                    0deg, 
+                    rgba(0,0,0,0.5),
+                    rgba(0,0,0,0.5)
+                ) 
+                ,url(../media/divisas.jpeg);
+            }
+            .servicios:nth-child(3){
+                background-image: 
+                linear-gradient(
+                    0deg, 
+                    rgba(0,0,0,0.5),
+                    rgba(0,0,0,0.5)
+                ) 
+                ,url(../media/paquetes.jpeg);
+            }
+    }
+
+}
