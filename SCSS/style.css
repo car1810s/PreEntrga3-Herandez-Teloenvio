@@ -36,22 +36,6 @@ p {
   color: white;
 }
 
-/*====Boton de ingreso Index====*/
-button {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-  background-color: #f4e409;
-  color: black;
-}
-button:hover {
-  background-color: aliceblue;
-  margin: 0;
-}
-
 /*====Estilos del Header====*/
 header .container {
   max-width: 1400px;
@@ -87,6 +71,21 @@ header a {
   text-align: center;
   flex-direction: column;
   height: 60vh;
+}
+.slogan a {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: #f4e409;
+  color: black;
+  text-decoration: none;
+}
+.slogan a:hover {
+  background-color: aliceblue;
+  margin: 0;
 }
 
 /*=====Estilos de About-Us=====*/
@@ -139,6 +138,7 @@ header a {
   margin-bottom: 10px;
 }
 
+/*======Servicios========*/
 #nuestros-servicios {
   text-align: center;
 }
@@ -164,6 +164,16 @@ header a {
 #nuestros-servicios .servicios:nth-child(3) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/paquetes.jpeg);
 }
+#nuestros-servicios button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: #f4e409;
+  color: black;
+}
 
 /*====Desktop version====*/
 @media (min-width: 720px) {
@@ -180,9 +190,11 @@ header a {
     padding-bottom: 0;
     padding-right: 20px;
   }
+  /*======index======*/
   .slogan h1 {
     padding-top: 300px;
   }
+  /*==========Sobre Nosotros======*/
   #somos-teloenvio .container {
     display: flex;
     padding-left: 200px;
@@ -242,6 +254,7 @@ header a {
     border-radius: 50%;
     margin-bottom: 10px;
   }
+  /*======Servicios======*/
   #nuestros-servicios .servicio {
     display: flex;
     justify-content: center;
@@ -250,7 +263,7 @@ header a {
     display: block;
     margin-bottom: 30px;
   }
-  #nuestros-servicios s h2 {
+  #nuestros-servicios h2 {
     margin-top: 0;
     padding-top: 100px;
   }
@@ -270,5 +283,95 @@ header a {
   }
   #nuestros-servicios .servicios:nth-child(3) {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/paquetes.jpeg);
+  }
+  /*=====formulario de registro=====*/
+  #sign-up {
+    padding-top: 125px;
+    padding-left: 450px;
+  }
+  #sign-up .container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 25px 30px;
+    border-radius: 5px;
+  }
+  #sign-up .container .title {
+    font-size: 25px;
+    position: relative;
+  }
+  #sign-up .container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #f4e409;
+  }
+  #sign-up .container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  #sign-up .container form .user-details .input-box {
+    margin: bottom 15px;
+    width: calc(50% - 20px);
+  }
+  #sign-up .container form .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+  }
+  #sign-up .container form .user-details .input-box .details {
+    margin-bottom: 5px;
+    display: block;
+  }
+  #sign-up .container form .detalles .titulo-genero {
+    font-size: 20px;
+  }
+  #sign-up .container form .detalles .categoria {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+  }
+  #sign-up .container form .detalles .categoria label {
+    display: flex;
+    align-items: center;
+  }
+  #sign-up .container form .detalles .categoria label .punto {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+  }
+  #sign-up .container form .detalles #punto-1:checked ~ .categoria .one,
+  #sign-up .container form .detalles #punto-2:checked ~ .categoria .two,
+  #sign-up .container form .detalles #punto-3:checked ~ .categoria .three {
+    border-color: #d9d9d9;
+    background-color: yellow;
+  }
+  #sign-up .container form input [type=radio] {
+    display: none;
+  }
+  #sign-up .container form .boton {
+    height: 45px;
+    margin: 45px 0;
+  }
+  #sign-up .container form .boton input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
