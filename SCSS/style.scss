@@ -467,6 +467,118 @@ header{
         
     }
     }
+
+    /*==========ESTILOS REMESAS=========*/
+    #remesas {
+        padding-top: 125px;
+        padding-left: 400px;
+        padding-right: 400px;
+
+        
+    
+        .container-re{
+            max-width: 700px;
+            width: 100%;
+            background-color: #f1f1f1;
+            padding: 25px 30px;
+            border-radius: 5px;
+            
+            
+    
+            .title{
+                font-size: 25px;
+                position: relative;
+            }
+            .title::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 30px;
+                
+            }
+            form{
+                .user-details{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 20px 0 12px 0;
+    
+                    .input-box{
+                        margin: bottom 15px; 
+                        width: calc(100% / 2 - 20px);
+                        input{
+                          height: 45px;
+                          width: 100%;
+                          outline:none ;
+                          border-radius: 5px;
+                          border: 1px solid;
+                          padding-left: 15px;
+                          font-size: 16px; 
+                          border-bottom-width: 2px ;  
+                        }
+                        .details{
+                            margin-bottom: 5px;
+                            display: block  ;
+    
+                        }
+                    }
+                }
+            .detalles{
+                .titulo-genero{
+                    font-size: 20px;
+                }
+                .categoria{
+                    display: flex;
+                    width: 80%;
+                    margin: 14px 0;
+                    justify-content: space-between;
+    
+                    label{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            color: black;
+                        }
+                        .punto{
+                            height: 18px;
+                            width: 18px;
+                            background: #d9d9d9;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            border: 5px solid transparent;
+                        }
+                    }
+                }
+                #punto-1:checked ~ .categoria .one,
+                #punto-2:checked ~ .categoria .two,
+                #punto-3:checked ~ .categoria .three{
+                    border-color: #d9d9d9;
+                    background-color: yellow;
+                }
+            }
+            input [type="radio"]{
+              display: none;
+            }
+            .boton{
+                height: 45px;
+                margin: 45px 0;
+                input{
+                    height: 100%;
+                    width: 100%;
+                    outline: none;
+                    font-size: 18px;
+                    border-radius: 5px;
+    
+    
+                }
+               
+            }
+        }
+        
+    }
+    }
 }
 
 

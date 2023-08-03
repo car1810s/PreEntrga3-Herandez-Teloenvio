@@ -402,4 +402,97 @@ header a {
     font-size: 18px;
     border-radius: 5px;
   }
+  /*==========ESTILOS REMESAS=========*/
+  #remesas {
+    padding-top: 125px;
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+  #remesas .container-re {
+    max-width: 700px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 25px 30px;
+    border-radius: 5px;
+  }
+  #remesas .container-re .title {
+    font-size: 25px;
+    position: relative;
+  }
+  #remesas .container-re .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+  }
+  #remesas .container-re form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  #remesas .container-re form .user-details .input-box {
+    margin: bottom 15px;
+    width: calc(50% - 20px);
+  }
+  #remesas .container-re form .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+  }
+  #remesas .container-re form .user-details .input-box .details {
+    margin-bottom: 5px;
+    display: block;
+  }
+  #remesas .container-re form .detalles .titulo-genero {
+    font-size: 20px;
+  }
+  #remesas .container-re form .detalles .categoria {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+  }
+  #remesas .container-re form .detalles .categoria label {
+    display: flex;
+    align-items: center;
+  }
+  #remesas .container-re form .detalles .categoria label span {
+    color: black;
+  }
+  #remesas .container-re form .detalles .categoria label .punto {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+  }
+  #remesas .container-re form .detalles #punto-1:checked ~ .categoria .one,
+  #remesas .container-re form .detalles #punto-2:checked ~ .categoria .two,
+  #remesas .container-re form .detalles #punto-3:checked ~ .categoria .three {
+    border-color: #d9d9d9;
+    background-color: yellow;
+  }
+  #remesas .container-re form input [type=radio] {
+    display: none;
+  }
+  #remesas .container-re form .boton {
+    height: 45px;
+    margin: 45px 0;
+  }
+  #remesas .container-re form .boton input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
