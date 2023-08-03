@@ -70,7 +70,7 @@ header a {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 60vh;
+  height: 100;
 }
 .slogan a {
   font-size: 1.5em;
@@ -292,7 +292,8 @@ header a {
   /*=====formulario de registro=====*/
   #sign-up {
     padding-top: 125px;
-    padding-left: 450px;
+    padding-left: 400px;
+    padding-right: 400px;
   }
   #sign-up .container {
     max-width: 700px;

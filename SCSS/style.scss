@@ -76,7 +76,7 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;flex-direction: column;
-    height: 60vh;
+    height: 100;
     a{
         font-size: 1.5em;
         font-weight: bold;
@@ -94,6 +94,7 @@ header{
         }
     }
 }
+
 
 /*=====Estilos de About-Us=====*/
 #somos-teloenvio{
@@ -213,6 +214,7 @@ header{
 
 /*====Desktop version====*/
 @media (min-width: 720px) {
+    
     header{
         position: fixed;
         width: 100%;
@@ -227,6 +229,7 @@ header{
             padding-right: 20px;
         }
     }
+   
     /*======index======*/
     .slogan{
         h1 {
@@ -356,7 +359,10 @@ header{
     /*=====formulario de registro=====*/
     #sign-up {
         padding-top: 125px;
-        padding-left: 450px;
+        padding-left: 400px;
+        padding-right: 400px;
+
+        
     
         .container{
             max-width: 700px;
@@ -364,6 +370,7 @@ header{
             background-color: #f1f1f1;
             padding: 25px 30px;
             border-radius: 5px;
+            
     
             .title{
                 font-size: 25px;
