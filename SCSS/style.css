@@ -187,6 +187,13 @@ header a {
 
 /*====Desktop version====*/
 @media (min-width: 720px) {
+  .btn, #remesas .container-re, #sign-up .container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 25px 30px;
+    border-radius: 5px;
+  }
   header {
     position: fixed;
     width: 100%;
@@ -315,13 +322,6 @@ header a {
     padding-left: 400px;
     padding-right: 400px;
   }
-  #sign-up .container {
-    max-width: 700px;
-    width: 100%;
-    background-color: #f1f1f1;
-    padding: 25px 30px;
-    border-radius: 5px;
-  }
   #sign-up .container .title {
     font-size: 25px;
     position: relative;
@@ -407,13 +407,6 @@ header a {
     padding-top: 125px;
     padding-left: 400px;
     padding-right: 400px;
-  }
-  #remesas .container-re {
-    max-width: 700px;
-    width: 100%;
-    background-color: #f1f1f1;
-    padding: 25px 30px;
-    border-radius: 5px;
   }
   #remesas .container-re .title {
     font-size: 25px;
